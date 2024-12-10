@@ -1,4 +1,4 @@
-FROM ros/ros:humble-ros-base-jammy
+FROM osrf/ros:humble-desktop-full
 
 ARG USERNAME=ros
 ARG USER_UID=1000
