@@ -1,0 +1,10 @@
+docker run -d \
+  --name=webtop2 \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Etc/UTC \
+  -p 3002:3000 \
+  -p 3003:3001 \
+  -v /path/to/data:/config \
+  --restart unless-stopped \
+  lscr.io/linuxserver/webtop:ubuntu-kde-version-d214d9c5
